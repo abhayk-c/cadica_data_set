@@ -1,10 +1,8 @@
-from .cadica_constants import *
+from .cadica_constants import*
 from .cadica_errors import*
 import os
 from enum import Enum
 from itertools import chain
-
-base_path = "/Users/abhaycuram/Desktop/ML Projects/Jeremy Fast AI/Data Sets/CADICA"
 
 class CadicaDataSetSamplingPolicy(Enum):
     """
