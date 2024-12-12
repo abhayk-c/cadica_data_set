@@ -1,5 +1,5 @@
 import pytest
-from cadica_data_set.cadica_data_set import *
+from cadica_data_set.cadica_data_set import CadicaDataSet, CadicaDataSetSamplingPolicy
 from .cadica_test_data import *
 
 VALID_CADICA_TEST_DATA_ROOT_PATH = "/Users/abhaycuram/Desktop/ML Projects/Jeremy Fast AI/Python Scripts/cadica_data_set/tests/resources/valid_cadica_test_data_set"
