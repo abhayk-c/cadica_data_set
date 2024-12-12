@@ -181,10 +181,4 @@ class CadicaDataSet:
                 image_paths.extend(cur_image_paths)
                 local_count += len(cur_image_paths)
     #endregion
-
-
-
-
-
-
-
+    
