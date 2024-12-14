@@ -80,9 +80,3 @@ def test_load_method_indexes_correctly_for_missing_patient_data():
     assert len(cadica_data_set.nonlesioned_image_paths_dict) == 0, "load() API failed, no image paths should be indexed because there is NO patient data."
     assert len(cadica_data_set.lesioned_images_set) == 0, "load() API failed, no image paths should be indexed because there is NO patient data."
     assert len(cadica_data_set.nonlesioned_images_set) == 0, "load() API failed, no image paths should be indexed because there is NO patient data."
-
-def test_load_method_raises_exception_for_missing_video_data():
-    with pytest.raises(FileNotFoundError) as exception_info:
-        cadica_data_set = CadicaDataSet(INVALID_CADICA_TEST_DATA_MISSING_VIDEO_DIRS_ROOT_PATH)
-        cadica_data_set.load()
-    assert str(exception_info.value) == "The video directories containing labeled images for each patient weren't found. Please ensure you did not modify the original cadica data set file structure."

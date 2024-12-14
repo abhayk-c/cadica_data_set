@@ -81,8 +81,6 @@ class CadicaDataSet:
                                         image_paths_key = os.path.join(patient_dir, video_dir)
                                         self.lesioned_image_paths_dict[image_paths_key] = selected_image_frame_file_paths
                                         self.lesioned_images_set.update(selected_image_frame_file_paths)
-                                    else:
-                                        raise CadicaDataSetError.video_dirs_not_found()
                             if nonlesion_video_dir_paths:
                                 for nonlesion_video_dir_path in nonlesion_video_dir_paths:
                                     if os.path.isdir(nonlesion_video_dir_path):
@@ -93,8 +91,6 @@ class CadicaDataSet:
                                         image_paths_key = os.path.join(patient_dir, video_dir)
                                         self.nonlesioned_image_paths_dict[image_paths_key] = selected_image_frame_file_paths
                                         self.nonlesioned_images_set.update(selected_image_frame_file_paths)
-                                    else:
-                                        raise CadicaDataSetError.video_dirs_not_found()
                         else:
                             raise CadicaDataSetError.videos_txt_files_not_found()
                     else:
