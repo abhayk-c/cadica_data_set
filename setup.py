@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="cadica_data_set",
-    version="1.0.1",
+    version="1.0.2",
     packages=find_packages(),
     install_requires=[],
     python_requires=">=3.6",
